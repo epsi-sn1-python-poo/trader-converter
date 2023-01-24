@@ -17,7 +17,7 @@ if __name__ == '__main__':
         print('Amount? ')
         amount = int(read_input())
         # query http with choice and amount
-        http_query = f'https://gael-roustan-epsi-2022-curly-meme-7jrggrq7p44hw6rp-8000.preview.app.github.dev/converter?choice={choice}&amount={amount}'
+        http_query = f'http://localhost:8000/converter?choice={choice}&amount={amount}'
         payload = {}
         headers = {}
         response = requests.request("GET", http_query, headers=headers, data=payload)
